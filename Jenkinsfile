@@ -52,6 +52,24 @@ pipeline{
 
 			}
 		}
+
+		stage('Run Ansible Inventory and Playbook'){
+		    stage('Run Ansible Playbook')
+            {
+                steps {
+
+                    script {
+
+                        ansiblePlaybook (
+
+                            playbook: 'playbook.yml',
+                            inventory: 'inventory'
+
+                        )
+                    }
+                }
+            }
+		}
 		
 	
 	}
