@@ -13,7 +13,7 @@ public class Main {
                 "2. Factorial of a number\n\n" +
                 "3. Natural Logarithm of a number\n\n" +
                 "4. Power of a number\n\n"+
-                "Or Press 5 to exit\n\n"
+                "Press 5 to exit\n\n"
         );
     }
 
