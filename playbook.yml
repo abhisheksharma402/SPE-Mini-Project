@@ -6,7 +6,7 @@
   tasks:
     - name: Pull Docker Image
       docker_image:
-        name: "abhisheksharma402/calculator:version1.0"
+        name: "abhisheksharma402/calculator:version2.0"
         source: pull
       register: docker_pull_result
 
@@ -20,4 +20,4 @@
         state: started
 
     - name: Running Container
-      shell: /usr/bin/docker run --name calc -it -d abhisheksharma402/calculator:version1.0
+      shell: /usr/bin/docker run --name calc -it -d abhisheksharma402/calculator:version2.0
