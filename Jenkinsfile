@@ -21,9 +21,15 @@ pipeline{
 		
 		stage('Maven Build'){
 			steps {
-				sh 'mvn clean install'
+				sh 'mvn clean install -DskipTests'
 			}
 		}
+
+		stage('Testing'){
+            steps {
+                sh 'mvn test'
+            }
+        }
 
 		stage('Building Docker Image')
 		{
