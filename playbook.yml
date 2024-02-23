@@ -20,4 +20,4 @@
         state: started
 
     - name: Running Container
-      shell: /usr/bin/docker run --name calci -it -d abhisheksharma402/calculator:version1.0
+      shell: /usr/bin/docker run --name calc -it -d abhisheksharma402/calculator:version1.0
