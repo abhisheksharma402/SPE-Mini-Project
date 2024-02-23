@@ -50,8 +50,8 @@ pipeline{
 
 					docker.withRegistry('', 'dockerhub-credentials') {
 
-						sh "docker image tag calculator abhisheksharma402/calculator:version1.0"
-						sh "docker push abhisheksharma402/calculator:version1.0"
+						sh "docker image tag calculator abhisheksharma402/calculator:version2.0"
+						sh "docker push abhisheksharma402/calculator:version2.0"
 
 					}
 				}
