@@ -18,10 +18,12 @@ public class Main {
     }
 
     public static double sqrt(int number){
+        if(number<0)return Double.NaN;
         return Math.sqrt(number);
     }
 
-    public static long factorial(int number){
+    public static double factorial(int number){
+        if(number<0)return Double.NaN;
         if(number==0)return 1;
         int x=number;
         int ans=x;
@@ -35,6 +37,7 @@ public class Main {
 
 
     public static double ln(double number){
+        if(number<0)return Double.NaN;
         return Math.log(number);
     }
 

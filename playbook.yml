@@ -20,5 +20,9 @@
         state: started
 
     - name: Running Container
+<<<<<<< HEAD
       # shell: /usr/bin/docker run --name calc -it -d abhisheksharma402/calculator:version2.0
       shell: /usr/bin/docker create --name calc -it abhisheksharma402/calculator:version2.0
+=======
+      shell: /usr/bin/docker run --name calc -it -d abhisheksharma402/calculator:version2.0
+>>>>>>> 370e933 (some changes)
