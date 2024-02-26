@@ -1,7 +1,7 @@
 ---
 - name: Pull Docker Image From DockerHub
-  hosts: 192.168.0.255
-  remote_user: harsh
+  hosts: 192.168.49.255
+  remote_user: abhisheksharma
   become: false
   tasks:
     - name: Pull Docker Image
