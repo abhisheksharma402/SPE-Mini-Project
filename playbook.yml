@@ -1,6 +1,6 @@
 ---
 - name: Pull Docker Image From DockerHub
-  hosts: 192.168.49.255
+  hosts: localhost
   remote_user: abhisheksharma
   become: false
   tasks:
